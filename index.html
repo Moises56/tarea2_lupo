@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lugo</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <!--TODO Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top nave">
+        <a class="navbar-brand" href="#">
+            <h1>lugo</h1>
+        </a>
+        
+        <ul class="navbar-nav mr-auto"></ul>
+
+        <select class=" form-control my-2my-lg-0 rounded-right rounded-left btn1 rounded-pill selec" id="user"
+            class="form-control" onchange="nombre();">
+        </select>
+        
+
+        <button class=" btn boton my-2 my-sm-0 ml-2 " type="button" data-toggle="modal"
+            data-target="#exampleModalCenter" onclick="verOrdenes()">Ver Ordenes
+        </button>
+    </nav>
+
+    <!--TODO tarjetas de nombre -->
+    <main role="main" class="container pb-5">
+
+        <div class="">
+            <div class="col-5 pt-5">
+                <h2 id="nombreUsuario"></h2>
+                <h3 class="Style:background-color: #440F71;">¿Que necesitas?</h3>
+            </div>
+        </div >
+
+ <!--TODO tarjetas de categorias -->
+        <div class="conatainer p-4">
+            <div class="row" id="categorias">
+                <!-- <div class="card p-4 m-2" style="width: 15rem;">
+                    <img src="/img/meme.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Titulo</p>
+                        <p class="card-text">comercios</p>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+
+ <!--TODO Modal 1 -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true" , id="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <h2 class="modal-title" style="background: #440F71; color:white" id="titu"></h2>
+                    <div class="row" id="ventana"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+
+  <!--TODO Modal 2 ver ordenes-->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header " style="color: white;
+                    background: #440F71">
+                        <h5 class="modal-title" id="titulOrden"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+            <!--TODO Modal 2 ver ordenes-->
+                    <div class="contaier">
+                        <div class="modal-body ">
+                            <ul class="list-group list-group-flush" id="listaOrdenes"></ul>
+                            <!-- <div class="row" id="listaOrdenes"></div> -->
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button btn2" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--* modal pedir -->
+       
+        <div class="modal fade" id="modalPedir" tabindex="-1" role="dialog"
+            aria-labelledby="modalPedirTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bdr">
+                    <!-- <div class="modal-header modalCabecera"> -->
+                        <!-- <h2 class="tituloPedir">Producto1</h2> -->
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div> -->
+                    <div class="container-fluid">
+                        <div class="modal-body ventanaPedir">
+                            <div class="row" id="vPedir">
+                                <!-- <h5 class="modal-title tituloPedir" id="titu4">Producto1</h5>
+                                <p class="align-self-center" id="descri">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, consectetur.</p>
+                                Cantidad a solicitar : <input class="form-control inputPedir" type="number" name="" id="pedir">
+                                <h4 class="marPedir" id="precio">$300</h4> -->
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button btn2" class="btn btn-secondary" data-dismiss="modal" onclick="procesar()">Procesar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main><!--? /.container -->
+    
+    <!--TODO Footer -->
+    <div class="footer">
+      <p>lugo</p>
+      <span>@Derechos reservados</span>
+      <span>2021</span>
+    </div>
+   
+    
+        
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+
+</html>

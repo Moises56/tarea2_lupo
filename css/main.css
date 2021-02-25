@@ -1,0 +1,209 @@
+body {
+    padding-top: 5rem;
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.nave {
+    background-color:#5C3287;
+}
+
+/* .btn1 {
+    background-color: white;
+    color: hsl(258, 31%, 58%)
+}
+
+.btn2 {
+    background-color: hsl(258, 31%, 58%);
+    color: white
+} */
+
+.btn2 span {
+    color: white
+}
+
+.sp {
+    color: #440F71
+}
+
+.selec{
+    width: 200px;
+}
+
+
+.boton{
+    color: rgb(235 241 236) !important;
+    border-color: rgb(28 12 78) !important;
+    background-color: #440F71 !important;
+    border-radius: 30px;
+    font-size: small;
+    width: 13%;
+}
+
+
+h1{
+    margin-bottom: .5rem;
+    font-weight: 1000;
+    line-height: 1.2;
+}
+
+h2{
+    font-weight: 1000;
+    color: #6F4795;
+}
+
+h3{
+    font-weight: 400;
+    color: #5C2E87;
+}
+
+.card{
+    border-radius: 2rem !important;
+}
+
+.card-img-top {
+    width: 50%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    background-color: black !important;
+}
+
+.card-header {
+    padding: 1.5rem 2rem;
+    margin-bottom: 0;
+    background-color: rgb(255 255 255 / 86%);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    width: 50%;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    color: #fff;
+    font-weight: 1000;
+}
+
+.card-text{
+    margin-top: 0;
+    color: #fff;
+    font-weight: 100;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #440F71;
+    border-color: #021a33;
+}
+
+.border-success {
+    border-color: #28a74500!important;
+}
+
+.tituloVentanaModal{
+    color: #440F71;
+    font-weight: 500; 
+
+} 
+
+.btn-primary {
+    color: #fff;
+    background-color: #440F71;
+    border-color: #021a33;
+    font-size: small;
+    width: 30;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #3b1684;
+    border-color: #11528c;
+    border-radius: 1.5rem;
+    width: 30%;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-weight: 1000;
+}
+
+.tituloProducto{
+    font-size: 1.5rem;
+    color: #440F71;
+    
+}
+
+@media(max-width: 890px){
+    .boton{
+        width: 30%;
+    } 
+    .selec{
+        width: 180px;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #440F71;
+        border-color: #021a33;
+        font-size: small;
+       
+    }
+    .tituloVentanaModal {
+        color: #440F71;
+        font-weight: 500;
+        font-size: medium;
+    }
+}
+
+/* @media(max-width: 320px){
+    .boton{
+        width: 500px;
+    } 
+    .selec{
+        width: 500px;
+    }
+} */
+
+.inputPedir {
+    width: 55%
+}
+
+.ventanaPedir{
+    margin: 20px;
+}
+.tituloPedir{
+    color: #f0e5fa;
+    font-weight: 500;
+}
+.modalCabecera{
+    background-color: #fff;
+}
+
+.marPedir {
+    margin-left: 90%;
+    padding-top: 20px;
+}
+
+.bdr{
+    border-radius: 2rem;
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #440F71;
+  color: white;
+  text-align: center;
+}
+
+
+/* .btn-outline-success:hover {
+    color: rgb(255 255 255);
+    background-color: rgb(99 34 158);
+    border-color: rgb(90 104 173);
+} */
+
